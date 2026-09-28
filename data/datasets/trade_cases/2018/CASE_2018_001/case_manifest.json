@@ -1,0 +1,168 @@
+{
+  "case_id": "CASE_2018_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2018"
+  },
+  "parties": {
+    "exporter": "SHANGHAI CHENGYUAN TRADING CO., LTD.",
+    "importer": "MATHILDE EUROPE GMBH",
+    "remitter": "MATHILDE EUROPE GMBH",
+    "beneficiary": "SHANGHAI CHENGYUAN TRADING CO., LTD."
+  },
+  "transaction": {
+    "currency": "USD",
+    "amount": 75780,
+    "invoice_amount": 75780,
+    "contract_no": "DS1808022",
+    "invoice_no": "DS1800681",
+    "lc_no": "LLC189110987",
+    "goods": "CULT LARGE SHOPPING FELT",
+    "quantity": "3000 PCS",
+    "trade_term": "CIF FRANKFURT / L/C AT SIGHT"
+  },
+  "shipment": {
+    "route": "SHANGHAI → FRANKFURT",
+    "shipment_date": "2018-11-20"
+  },
+  "documents": [
+    {
+      "file": "2018业务题目.jpg",
+      "document_type": "business_prompt",
+      "source_type": "international_business_document_exam",
+      "source_year": "2018"
+    },
+    {
+      "file": "2018发票.jpg",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2018"
+    },
+    {
+      "file": "2018汇票.jpg",
+      "document_type": "bill_of_exchange",
+      "source_type": "international_business_document_exam",
+      "source_year": "2018"
+    },
+    {
+      "file": "2018装箱单.jpg",
+      "document_type": "packing_list",
+      "source_type": "international_business_document_exam",
+      "source_year": "2018"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "SHANGHAI CHENGYUAN TRADING CO., LTD.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "MATHILDE EUROPE GMBH",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "DS1800681",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "DS1808022",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "LLC189110987",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 75780,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "CULT LARGE SHOPPING FELT",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "3000 PCS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "SHANGHAI → FRANKFURT",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2018发票.jpg",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "PARTIAL"
+}

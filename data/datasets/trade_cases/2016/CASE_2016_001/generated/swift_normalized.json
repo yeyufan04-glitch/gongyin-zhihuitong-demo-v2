@@ -1,0 +1,11 @@
+{
+  "message_type": "MT103",
+  "synthetic": true,
+  "demo_label": "SIMULATED FOR DEMO",
+  "transaction_reference": "DEMO2016EXP2015001",
+  "currency": "USD",
+  "amount": 79960,
+  "ordering_customer": "JOYFAIR TRADING CORP.",
+  "beneficiary": "SUNSHINE TRADING CORP.",
+  "remittance_information": "INV EXP2015001 / CONTRACT STE0518 / 100% COTTON SHIRT"
+}

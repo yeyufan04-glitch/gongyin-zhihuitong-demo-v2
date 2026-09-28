@@ -1,0 +1,168 @@
+{
+  "case_id": "CASE_2019_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2019"
+  },
+  "parties": {
+    "exporter": "TIANJIN ESHOW CO., LTD.",
+    "importer": "MARCO FOERSTER GMBH",
+    "remitter": "MARCO FOERSTER GMBH",
+    "beneficiary": "TIANJIN ESHOW CO., LTD."
+  },
+  "transaction": {
+    "currency": "USD",
+    "amount": 153000,
+    "invoice_amount": 180000,
+    "contract_no": "EXP0905033",
+    "invoice_no": "EXP2019033",
+    "lc_no": "TK24680",
+    "goods": "RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE",
+    "quantity": "10000 PCS",
+    "trade_term": "CFR HAMBURG / L/C AT SIGHT"
+  },
+  "shipment": {
+    "route": "TIANJIN → HAMBURG",
+    "shipment_date": "2019-05-30"
+  },
+  "documents": [
+    {
+      "file": "2019_发票.jpg",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2019"
+    },
+    {
+      "file": "2019_装箱单.jpg",
+      "document_type": "packing_list",
+      "source_type": "international_business_document_exam",
+      "source_year": "2019"
+    },
+    {
+      "file": "2019_装运通知.jpg",
+      "document_type": "shipping_note",
+      "source_type": "international_business_document_exam",
+      "source_year": "2019"
+    },
+    {
+      "file": "2019业务试题.jpg",
+      "document_type": "business_prompt",
+      "source_type": "international_business_document_exam",
+      "source_year": "2019"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "TIANJIN ESHOW CO., LTD.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "MARCO FOERSTER GMBH",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "EXP2019033",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "EXP0905033",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "TK24680",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 180000,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "10000 PCS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_发票.jpg",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "TIANJIN → HAMBURG",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2019_装运通知.jpg",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "CONFLICT"
+}

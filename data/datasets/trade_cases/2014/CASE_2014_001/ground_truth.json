@@ -1,0 +1,25 @@
+{
+  "expected_document_types": [
+    "commercial_invoice",
+    "packing_list",
+    "shipping_note"
+  ],
+  "expected_fields": {
+    "exporter": "SHANGHAI ANDYS TRADING CO., LTD.",
+    "importer": "HAZZE AB HOLDING",
+    "invoice_no": "AD2013011",
+    "contract_no": "AD13007",
+    "lc_no": "BCN1008675",
+    "currency": "USD",
+    "amount": 27500,
+    "goods": "GAS DETECTORS",
+    "quantity": "100PCS",
+    "shipment": "SHANGHAI → STOCKHOLM"
+  },
+  "expected_conflicts": [],
+  "expected_missing_evidence": [
+    "bill_of_lading"
+  ],
+  "expected_ese_status": "PARTIAL",
+  "expected_human_review": true
+}

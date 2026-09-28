@@ -1,0 +1,168 @@
+{
+  "case_id": "CASE_2011_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2011"
+  },
+  "parties": {
+    "exporter": "SUZHOU IMPORT & EXPORT TRADE CORPORATION",
+    "importer": "TANJIN-DAIEI CO., LTD.",
+    "remitter": "TANJIN-DAIEI CO., LTD.",
+    "beneficiary": "SUZHOU IMPORT & EXPORT TRADE CORPORATION"
+  },
+  "transaction": {
+    "currency": "USD",
+    "amount": 32800,
+    "invoice_amount": 32800,
+    "contract_no": "TXT264",
+    "invoice_no": "TX0522",
+    "lc_no": "XT173",
+    "goods": "BLACK TEA",
+    "quantity": "330KGS",
+    "trade_term": "CIF OSAKA / L/C AT SIGHT"
+  },
+  "shipment": {
+    "route": "SUZHOU PORT → OSAKA PORT",
+    "shipment_date": "2010-06-20"
+  },
+  "documents": [
+    {
+      "file": "业务题目.jpg",
+      "document_type": "business_prompt",
+      "source_type": "international_business_document_exam",
+      "source_year": "2011"
+    },
+    {
+      "file": "发票.jpg",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2011"
+    },
+    {
+      "file": "屏幕截图 2026-09-13 225625.jpg",
+      "document_type": "supporting_document",
+      "source_type": "international_business_document_exam",
+      "source_year": "2011"
+    },
+    {
+      "file": "装箱单.jpg",
+      "document_type": "packing_list",
+      "source_type": "international_business_document_exam",
+      "source_year": "2011"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "SUZHOU IMPORT & EXPORT TRADE CORPORATION",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "TANJIN-DAIEI CO., LTD.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "TX0522",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "TXT264",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "XT173",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 32800,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "BLACK TEA",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "330KGS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "SUZHOU PORT → OSAKA PORT",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "发票.jpg",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "GOLDEN_CASE"
+}

@@ -1,0 +1,11 @@
+{
+  "dataset": "Synthetic Demo Risk Data",
+  "provider": "BANK_RISK_MOCK",
+  "case_001": {
+    "request": {"counterparty": "ABC GLOBAL LIMITED", "region": "英国", "currency": "USD", "service": "Enterprise Management Advisory Service"},
+    "status": "CLEAR",
+    "alerts": [],
+    "requestHash": "demo-sha256-8c9b41a2",
+    "responseHash": "demo-sha256-1f729e0d"
+  }
+}

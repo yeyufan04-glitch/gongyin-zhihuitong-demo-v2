@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-09-15",
+  "case_count": 9,
+  "unique_case_ids": true,
+  "all_passed": true,
+  "checks": [
+    {
+      "case_id": "CASE_2011_001",
+      "original_files": 4,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    },
+    {
+      "case_id": "CASE_2012_001",
+      "original_files": 3,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    },
+    {
+      "case_id": "CASE_2013_001",
+      "original_files": 3,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    },
+    {
+      "case_id": "CASE_2014_001",
+      "original_files": 3,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    },
+    {
+      "case_id": "CASE_2015_001",
+      "original_files": 3,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    },
+    {
+      "case_id": "CASE_2016_001",
+      "original_files": 4,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    },
+    {
+      "case_id": "CASE_2017_001",
+      "original_files": 6,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    },
+    {
+      "case_id": "CASE_2018_001",
+      "original_files": 4,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    },
+    {
+      "case_id": "CASE_2019_001",
+      "original_files": 4,
+      "swift_amount_matches_case": true,
+      "invoice_amount_matches_case_or_expected_conflict": true,
+      "currency_present": true,
+      "document_mapping_valid": true,
+      "intended_conflict_recorded": true,
+      "comparison_rule_pass": true
+    }
+  ],
+  "notes": [
+    "2019金额差异是原始考试题目与商业发票之间的预期冲突，未被隐藏。",
+    "SWIFT为SIMULATED FOR DEMO，不代表真实银行报文。"
+  ]
+}

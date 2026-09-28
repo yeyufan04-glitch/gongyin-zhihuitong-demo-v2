@@ -1,0 +1,162 @@
+{
+  "case_id": "CASE_2013_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2013"
+  },
+  "parties": {
+    "exporter": "TIANJIN TECHSUN CO., LTD.",
+    "importer": "VESTE BEYAS ESYE SAN. TICAS ORGANIZE SANAYI BOLGEST",
+    "remitter": "VESTE BEYAS ESYE SAN. TICAS ORGANIZE SANAYI BOLGEST",
+    "beneficiary": "TIANJIN TECHSUN CO., LTD."
+  },
+  "transaction": {
+    "currency": "USD",
+    "amount": 240000,
+    "invoice_amount": 240000,
+    "contract_no": "TECH1305",
+    "invoice_no": "TECH126",
+    "lc_no": "901LC2519031",
+    "goods": "CONDENSER",
+    "quantity": "20000PCS",
+    "trade_term": "CIF IZMIR"
+  },
+  "shipment": {
+    "route": "TIANJIN → IZMIR",
+    "shipment_date": "2013-05-12"
+  },
+  "documents": [
+    {
+      "file": "bill_of_exchange.png",
+      "document_type": "bill_of_exchange",
+      "source_type": "international_business_document_exam",
+      "source_year": "2013"
+    },
+    {
+      "file": "commercial_invoice.png",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2013"
+    },
+    {
+      "file": "packing_list.png",
+      "document_type": "packing_list",
+      "source_type": "international_business_document_exam",
+      "source_year": "2013"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "TIANJIN TECHSUN CO., LTD.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "VESTE BEYAS ESYE SAN. TICAS ORGANIZE SANAYI BOLGEST",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "TECH126",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "TECH1305",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "901LC2519031",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 240000,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "CONDENSER",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "20000PCS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "TIANJIN → IZMIR",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "PARTIAL"
+}

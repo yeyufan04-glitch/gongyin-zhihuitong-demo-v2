@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "purpose": "competition demo",
+  "case_id": "CASE_2019_001",
+  "risk_screening": {
+    "provider": "BANK_RISK_MOCK",
+    "status": "CLEAR",
+    "note": "不代表真实银行或监管接口"
+  },
+  "customs": {
+    "status": "NOT_CONNECTED",
+    "note": "未把模拟海关数据包装成真实接口"
+  }
+}

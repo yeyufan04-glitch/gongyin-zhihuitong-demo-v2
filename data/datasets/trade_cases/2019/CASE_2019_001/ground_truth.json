@@ -1,0 +1,27 @@
+{
+  "expected_document_types": [
+    "business_prompt",
+    "commercial_invoice",
+    "shipping_note"
+  ],
+  "expected_fields": {
+    "exporter": "TIANJIN ESHOW CO., LTD.",
+    "importer": "MARCO FOERSTER GMBH",
+    "invoice_no": "EXP2019033",
+    "contract_no": "EXP0905033",
+    "lc_no": "TK24680",
+    "currency": "USD",
+    "amount": 180000,
+    "goods": "RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE",
+    "quantity": "10000 PCS",
+    "shipment": "TIANJIN → HAMBURG"
+  },
+  "expected_conflicts": [
+    "题目32B金额USD 153,000与商业发票USD 180,000不一致"
+  ],
+  "expected_missing_evidence": [
+    "packing_list"
+  ],
+  "expected_ese_status": "PARTIAL",
+  "expected_human_review": true
+}

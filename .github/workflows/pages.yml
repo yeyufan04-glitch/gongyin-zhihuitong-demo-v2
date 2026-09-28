@@ -1,7 +1,7 @@
 name: Publish static demo
 on:
   push:
-    branches: [main]
+    branches: [main, feature/ui-demo-redesign]
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,18 +18,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Extract downloadable web package
-        run: |
-          mkdir -p site extracted
-          unzip -q "工银智汇通系统Demo-可下载版-v2.zip" -d extracted
-          PACKAGE_ROOT="$(dirname "$(find extracted -type f -name index.html -print -quit)")"
-          cp -R "$PACKAGE_ROOT/." site/
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Build current source
+        run: npm run build:cn
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: dist-cn
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

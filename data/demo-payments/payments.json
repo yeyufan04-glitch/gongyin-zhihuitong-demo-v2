@@ -1,0 +1,6 @@
+{
+  "source": "Mock Payment Event API",
+  "synthetic": true,
+  "schema": "InboundPayment",
+  "file": "public/demo-data/inbound-payments.json"
+}

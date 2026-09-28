@@ -1,0 +1,162 @@
+{
+  "case_id": "CASE_2014_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2014"
+  },
+  "parties": {
+    "exporter": "SHANGHAI ANDYS TRADING CO., LTD.",
+    "importer": "HAZZE AB HOLDING",
+    "remitter": "HAZZE AB HOLDING",
+    "beneficiary": "SHANGHAI ANDYS TRADING CO., LTD."
+  },
+  "transaction": {
+    "currency": "USD",
+    "amount": 27500,
+    "invoice_amount": 27500,
+    "contract_no": "AD13007",
+    "invoice_no": "AD2013011",
+    "lc_no": "BCN1008675",
+    "goods": "GAS DETECTORS",
+    "quantity": "100PCS",
+    "trade_term": "FOB SHANGHAI / L/C AT SIGHT"
+  },
+  "shipment": {
+    "route": "SHANGHAI → STOCKHOLM",
+    "shipment_date": "2013-07-20"
+  },
+  "documents": [
+    {
+      "file": "commercial_invoice.png",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2014"
+    },
+    {
+      "file": "packing_list.png",
+      "document_type": "packing_list",
+      "source_type": "international_business_document_exam",
+      "source_year": "2014"
+    },
+    {
+      "file": "shipping_note.png",
+      "document_type": "shipping_note",
+      "source_type": "international_business_document_exam",
+      "source_year": "2014"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "SHANGHAI ANDYS TRADING CO., LTD.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "HAZZE AB HOLDING",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "AD2013011",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "AD13007",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "BCN1008675",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 27500,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "GAS DETECTORS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "100PCS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "SHANGHAI → STOCKHOLM",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "shipping_note.png",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "PARTIAL"
+}

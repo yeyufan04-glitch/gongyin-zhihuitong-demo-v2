@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.vinext/
+.wrangler/
+.vite/
+dist/
+dist-cn/
+tmp/pdfs/rendered/
+*.log
+.DS_Store
+delivery/
+.openai/
+.playwright-cli/
+release/
