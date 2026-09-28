@@ -8,5 +8,8 @@ export default defineConfig({
   publicDir: "../public",
   plugins: [react()],
   build: { outDir: "../dist-cn", emptyOutDir: true },
-  server: { fs: { allow: [".."] } },
+  server: {
+    fs: { allow: [".."] },
+    proxy: { "/backend": { target: "http://127.0.0.1:3001", changeOrigin: true, rewrite: (path) => path.replace(/^\/backend/, "") } },
+  },
 });

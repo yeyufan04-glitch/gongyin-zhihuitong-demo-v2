@@ -77,7 +77,7 @@ export function ProductCoverPage({ onEnter }: ProductCoverPageProps) {
       </div>
 
       <div className="launch-actions">
-        <button className="launch-enter" onClick={onEnter}><span>进入系统</span><b>→</b></button>
+        <button className="launch-enter" onClick={() => onEnter("customer")}><span>进入系统</span><b>→</b></button>
         <button className="launch-runtime" onClick={() => onEnter("runtime")}><span>查看系统运行</span><b>↗</b></button>
         <p><i /> 竞赛演示环境<br /><span>模拟数据 · 全程留痕</span></p>
       </div>

@@ -1,4 +1,4 @@
-const API_BASE_URL = (typeof window !== "undefined" && window.__DEMO_API_BASE_URL__) || import.meta?.env?.VITE_DEMO_API_BASE_URL || "";
+const API_BASE_URL = (typeof window !== "undefined" && window.__DEMO_API_BASE_URL__) || import.meta.env.VITE_DEMO_API_BASE_URL || "";
 
 async function request(path, options = {}) {
   const response = await fetch(`${API_BASE_URL}${path}`, options);

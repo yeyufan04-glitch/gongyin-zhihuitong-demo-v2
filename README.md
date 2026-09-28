@@ -46,6 +46,30 @@ npm install
 npm run dev
 ```
 
+### LOCAL LIVE DEMO
+
+真实联调使用同机三项服务。GitHub Pages 仍是静态预置数据演示，不执行 OCR。
+
+Terminal 1（后端仓库 `gongyin-zhihuitong-system-v2`）：
+
+```bash
+python -m ai_runtime.app
+```
+
+Terminal 2（后端仓库）：
+
+```bash
+AI_RUNTIME_MODE=local PORT=3001 npm run server
+```
+
+Terminal 3（本前端仓库）：
+
+```bash
+VITE_DEMO_API_BASE_URL=/backend npm run dev -- --host 127.0.0.1
+```
+
+开发服务器将 `/backend/api/*` 代理到 `http://127.0.0.1:3001/api/*`，无需关闭浏览器安全策略。进入材料中心后上传 JPG/PNG 商业发票（不超过 15MB），页面会展示后端返回的 Document ID、SHA-256、FACT、Evidence、Verification、CAV、FLOW 与审计事件。
+
 检查工程：
 
 ```bash
