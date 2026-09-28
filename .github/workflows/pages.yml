@@ -1,7 +1,7 @@
 name: Publish static demo
 on:
   push:
-    branches: [main]
+    branches: [main, feature/ui-demo-redesign]
   workflow_dispatch:
 permissions:
   contents: read
