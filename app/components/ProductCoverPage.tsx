@@ -10,6 +10,18 @@ const architecture = [
   { no: "05", kind: "一闭环", title: "可信审核闭环", meta: "可信日志 · 人工接管 · 全程追溯", className: "launch-node-loop" },
 ];
 
+function TrustJourney() {
+  const nodes = ["汇款到账", "材料提交", "智能识别", "事实核验", "可信执行", "银行复核"];
+  return <div className="launch-journey" aria-label="一笔国际汇款的可信作业轨迹">
+    <div className="launch-journey-head"><span>一笔国际汇款的可信作业轨迹</span><small>END-TO-END TRACE</small></div>
+    <div className="launch-journey-line" />
+    <div className="launch-journey-nodes">{nodes.map((node, index) => <div className={node === "可信执行" ? "journey-node current" : "journey-node"} key={node}><b>{String(index + 1).padStart(2, "0")}</b><i /><span>{node}</span>{node === "事实核验" && <small>FACT</small>}{node === "可信执行" && <small>CAV</small>}{node === "银行复核" && <small>FLOW</small>}</div>)}</div>
+    <div className="launch-journey-foot"><span>从业务输入到人工复核</span><b>人工保有最终业务决定权</b></div>
+  </div>;
+}
+
+// Retained as a legacy visual reference; the live homepage uses TrustJourney.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function TrustArchitecturePoster() {
   return <div className="launch-poster" aria-label="CAV启发式双域可信执行架构宣传图">
     <div className="launch-poster-topline">
@@ -59,19 +71,15 @@ export function ProductCoverPage({ onEnter }: ProductCoverPageProps) {
     </header>
 
     <section className="launch-copy">
-      <p className="launch-eyebrow">CAV启发式双域可信执行架构</p>
+      <p className="launch-eyebrow">国际汇款智能作业</p>
       <h1>工银智汇通</h1>
       <h2>企业国际汇款可信智能作业平台</h2>
       <div className="launch-statement">
         <span>让每一笔境外汇款</span>
         <strong>始于事实，行于可信。</strong>
       </div>
-      <p className="launch-description">贯通境外汇款通知、材料提交、智能审核与银行复核，让标准业务更高效，让智能判断有依据、受约束、可追溯。</p>
+      <p className="launch-description">贯通汇款通知、材料提交、智能识别、事实核验与银行复核，让国际汇款作业更高效、更可信、更可追溯。</p>
 
-      <div className="launch-formula" aria-label="两域一底座一闸门一闭环">
-        <small>核心技术架构</small>
-        <strong>两域</strong><i>·</i><strong>一底座</strong><i>·</i><strong>一闸门</strong><i>·</i><strong>一闭环</strong>
-      </div>
       <div className="launch-capabilities" aria-label="四项核心能力">
         <span>智能识别</span><span>事实核验</span><span>可信执行</span><span>全程留痕</span>
       </div>
@@ -84,12 +92,12 @@ export function ProductCoverPage({ onEnter }: ProductCoverPageProps) {
     </section>
 
     <section className="launch-visual">
-      <TrustArchitecturePoster />
+      <TrustJourney />
     </section>
 
     <footer className="launch-footer">
       <span>企业客户</span><i /> <span>银行经办</span><i /> <span>银行复核</span><i /> <span>智能系统</span>
-      <b>四方协同贯通企业国际汇款全流程</b>
+      <b>从业务输入到人工复核，全程清晰可追溯</b>
     </footer>
   </main>;
 }
