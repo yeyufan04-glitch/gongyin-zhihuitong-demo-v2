@@ -1,0 +1,124 @@
+{
+  "title": "贸证贯通真实风格考试单据 Trade Case 数据集",
+  "source_directory": "/Users/yeatss/Desktop/工行杯/9.13/单据资料",
+  "synthetic_boundary": "SWIFT、风险与海关接口数据均为演示构造；原始图片保留为证据源。",
+  "cases": [
+    {
+      "year": "2011",
+      "id": "CASE_2011_001",
+      "amount": 32800,
+      "invoiceAmount": 32800,
+      "currency": "USD",
+      "route": "GOLDEN_CASE",
+      "documents": [
+        "commercial_invoice",
+        "packing_list"
+      ]
+    },
+    {
+      "year": "2012",
+      "id": "CASE_2012_001",
+      "amount": 192000,
+      "invoiceAmount": 192000,
+      "currency": "USD",
+      "route": "FAST_REVIEW",
+      "documents": [
+        "commercial_invoice",
+        "insurance",
+        "certificate_of_origin"
+      ]
+    },
+    {
+      "year": "2013",
+      "id": "CASE_2013_001",
+      "amount": 240000,
+      "invoiceAmount": 240000,
+      "currency": "USD",
+      "route": "PARTIAL",
+      "documents": [
+        "commercial_invoice",
+        "bill_of_exchange",
+        "packing_list"
+      ]
+    },
+    {
+      "year": "2014",
+      "id": "CASE_2014_001",
+      "amount": 27500,
+      "invoiceAmount": 27500,
+      "currency": "USD",
+      "route": "PARTIAL",
+      "documents": [
+        "commercial_invoice",
+        "packing_list",
+        "shipping_note"
+      ]
+    },
+    {
+      "year": "2015",
+      "id": "CASE_2015_001",
+      "amount": 153000,
+      "invoiceAmount": 153000,
+      "currency": "USD",
+      "route": "PARTIAL",
+      "documents": [
+        "commercial_invoice",
+        "packing_list",
+        "shipping_note"
+      ]
+    },
+    {
+      "year": "2016",
+      "id": "CASE_2016_001",
+      "amount": 79960,
+      "invoiceAmount": 79960,
+      "currency": "USD",
+      "route": "PARTIAL",
+      "documents": [
+        "business_prompt",
+        "commercial_invoice",
+        "bill_of_exchange",
+        "beneficiary_certificate"
+      ]
+    },
+    {
+      "year": "2017",
+      "id": "CASE_2017_001",
+      "amount": 96000,
+      "invoiceAmount": 96000,
+      "currency": "GBP",
+      "route": "PARTIAL",
+      "documents": [
+        "business_prompt",
+        "commercial_invoice",
+        "packing_list"
+      ]
+    },
+    {
+      "year": "2018",
+      "id": "CASE_2018_001",
+      "amount": 75780,
+      "invoiceAmount": 75780,
+      "currency": "USD",
+      "route": "PARTIAL",
+      "documents": [
+        "business_prompt",
+        "commercial_invoice",
+        "bill_of_exchange"
+      ]
+    },
+    {
+      "year": "2019",
+      "id": "CASE_2019_001",
+      "amount": 153000,
+      "invoiceAmount": 180000,
+      "currency": "USD",
+      "route": "CONFLICT",
+      "documents": [
+        "business_prompt",
+        "commercial_invoice",
+        "shipping_note"
+      ]
+    }
+  ]
+}

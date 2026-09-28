@@ -1,0 +1,11 @@
+{
+  "message_type": "MT103",
+  "synthetic": true,
+  "demo_label": "SIMULATED FOR DEMO",
+  "transaction_reference": "DEMO2015E140519872",
+  "currency": "USD",
+  "amount": 153000,
+  "ordering_customer": "MARCO FOERSTER GMBH",
+  "beneficiary": "SHENZHEN ESHOW CO., LTD.",
+  "remittance_information": "INV E140519872 / CONTRACT E14052115 / RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE"
+}

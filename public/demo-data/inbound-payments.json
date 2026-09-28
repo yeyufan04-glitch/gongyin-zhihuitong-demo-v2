@@ -1,0 +1,9 @@
+{
+  "source": "pacs.008.001.08 XML",
+  "company": "武汉励功数字服务有限公司",
+  "payments": [
+    {"paymentId":"PMT-20260910-001","uetr":"b5f2d3a1-7d20-4c70-9c9b-8f8ef8f10001","receivedAt":"2026-09-10 14:32","debtorName":"ABC GLOBAL LTD","creditorName":"武汉励功数字服务有限公司","amount":80000,"currency":"USD","remittanceInfo":"CONSULTING SERVICE SEP 2026","paymentNetwork":"SWIFT"},
+    {"paymentId":"PMT-20260910-002","uetr":"c9a0b6f4-2e14-4bb2-9d02-6aef8c990002","receivedAt":"2026-09-10 13:46","debtorName":"TECH SOLUTIONS INC","creditorName":"武汉励功数字服务有限公司","amount":30000,"currency":"USD","remittanceInfo":"SOFTWARE SUPPORT SERVICE SEP 2026","paymentNetwork":"SWIFT"},
+    {"paymentId":"PMT-20260910-003","uetr":"a1f7d2c8-9b60-4110-8b77-6d1d0f070003","receivedAt":"2026-09-10 12:21","debtorName":"GLOBAL EQUIPMENT LTD","creditorName":"武汉远洋设备有限公司","amount":120000,"currency":"USD","remittanceInfo":"EQUIPMENT SETTLEMENT SEP 2026","paymentNetwork":"SWIFT"}
+  ]
+}

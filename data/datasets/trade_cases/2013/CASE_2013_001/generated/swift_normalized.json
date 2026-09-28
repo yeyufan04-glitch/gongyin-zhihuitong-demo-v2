@@ -1,0 +1,11 @@
+{
+  "message_type": "MT103",
+  "synthetic": true,
+  "demo_label": "SIMULATED FOR DEMO",
+  "transaction_reference": "DEMO2013TECH126",
+  "currency": "USD",
+  "amount": 240000,
+  "ordering_customer": "VESTE BEYAS ESYE SAN. TICAS ORGANIZE SANAYI BOLGEST",
+  "beneficiary": "TIANJIN TECHSUN CO., LTD.",
+  "remittance_information": "INV TECH126 / CONTRACT TECH1305 / CONDENSER"
+}

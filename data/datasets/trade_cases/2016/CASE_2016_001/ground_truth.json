@@ -1,0 +1,26 @@
+{
+  "expected_document_types": [
+    "business_prompt",
+    "commercial_invoice",
+    "bill_of_exchange",
+    "beneficiary_certificate"
+  ],
+  "expected_fields": {
+    "exporter": "SUNSHINE TRADING CORP.",
+    "importer": "JOYFAIR TRADING CORP.",
+    "invoice_no": "EXP2015001",
+    "contract_no": "STE0518",
+    "lc_no": "DBS963/FR",
+    "currency": "USD",
+    "amount": 79960,
+    "goods": "100% COTTON SHIRT",
+    "quantity": "4000PCS",
+    "shipment": "TIANJIN → NEW YORK"
+  },
+  "expected_conflicts": [],
+  "expected_missing_evidence": [
+    "packing_list"
+  ],
+  "expected_ese_status": "PARTIAL",
+  "expected_human_review": true
+}

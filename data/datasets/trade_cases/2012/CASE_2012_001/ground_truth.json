@@ -1,0 +1,27 @@
+{
+  "expected_document_types": [
+    "commercial_invoice",
+    "insurance",
+    "certificate_of_origin"
+  ],
+  "expected_fields": {
+    "exporter": "DAYU CUTTING TOOLS I/E CORP",
+    "importer": "FAR EASTERN TRADING COMPANY LIMITED",
+    "invoice_no": "X118",
+    "contract_no": "MK007",
+    "lc_no": "41-19-03",
+    "currency": "USD",
+    "amount": 192000,
+    "goods": "CUTTING TOOLS",
+    "quantity": "1500 SETS",
+    "shipment": "TIANJIN → HONG KONG → NEW YORK"
+  },
+  "expected_conflicts": [
+    "保险单包装单位500 CARTONS与原产地证明500 CARTONS，数量字段需人工复核"
+  ],
+  "expected_missing_evidence": [
+    "packing_list"
+  ],
+  "expected_ese_status": "PARTIAL",
+  "expected_human_review": true
+}

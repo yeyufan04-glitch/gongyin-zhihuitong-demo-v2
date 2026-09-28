@@ -1,0 +1,11 @@
+{
+  "message_type": "MT103",
+  "synthetic": true,
+  "demo_label": "SIMULATED FOR DEMO",
+  "transaction_reference": "DEMO2017AE96339",
+  "currency": "GBP",
+  "amount": 96000,
+  "ordering_customer": "JOYFAIR TRADING CORP.",
+  "beneficiary": "SHANGHAI GUANGDA CO., LTD.",
+  "remittance_information": "INV AE9633-9 / CONTRACT AE9633 / RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE"
+}

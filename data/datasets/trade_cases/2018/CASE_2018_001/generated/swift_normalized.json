@@ -1,0 +1,11 @@
+{
+  "message_type": "MT103",
+  "synthetic": true,
+  "demo_label": "SIMULATED FOR DEMO",
+  "transaction_reference": "DEMO2018DS1800681",
+  "currency": "USD",
+  "amount": 75780,
+  "ordering_customer": "MATHILDE EUROPE GMBH",
+  "beneficiary": "SHANGHAI CHENGYUAN TRADING CO., LTD.",
+  "remittance_information": "INV DS1800681 / CONTRACT DS1808022 / CULT LARGE SHOPPING FELT"
+}

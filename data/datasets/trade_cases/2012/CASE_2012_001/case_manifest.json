@@ -1,0 +1,162 @@
+{
+  "case_id": "CASE_2012_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2012"
+  },
+  "parties": {
+    "exporter": "DAYU CUTTING TOOLS I/E CORP",
+    "importer": "FAR EASTERN TRADING COMPANY LIMITED",
+    "remitter": "FAR EASTERN TRADING COMPANY LIMITED",
+    "beneficiary": "DAYU CUTTING TOOLS I/E CORP"
+  },
+  "transaction": {
+    "currency": "USD",
+    "amount": 192000,
+    "invoice_amount": 192000,
+    "contract_no": "MK007",
+    "invoice_no": "X118",
+    "lc_no": "41-19-03",
+    "goods": "CUTTING TOOLS",
+    "quantity": "1500 SETS",
+    "trade_term": "CIF NEW YORK"
+  },
+  "shipment": {
+    "route": "TIANJIN → HONG KONG → NEW YORK",
+    "shipment_date": "2011-05-20"
+  },
+  "documents": [
+    {
+      "file": "certificate_of_origin.png",
+      "document_type": "certificate_of_origin",
+      "source_type": "international_business_document_exam",
+      "source_year": "2012"
+    },
+    {
+      "file": "commercial_invoice.png",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2012"
+    },
+    {
+      "file": "insurance_policy.png",
+      "document_type": "insurance_policy",
+      "source_type": "international_business_document_exam",
+      "source_year": "2012"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "DAYU CUTTING TOOLS I/E CORP",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "FAR EASTERN TRADING COMPANY LIMITED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "X118",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "MK007",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "41-19-03",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 192000,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "CUTTING TOOLS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "1500 SETS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "TIANJIN → HONG KONG → NEW YORK",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "FAST_REVIEW"
+}

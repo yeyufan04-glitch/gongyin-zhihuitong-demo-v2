@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="urn:swift:xsd:head.001.001.02">
+  <AppHdr>
+    <Fr><FIId><FinInstnId><BICFI>HBUKGB4BXXX</BICFI></FinInstnId></FIId></Fr>
+    <To><FIId><FinInstnId><BICFI>ICBKCNBJWUH</BICFI></FinInstnId></FIId></To>
+    <BizMsgIdr>ABC20260910A001</BizMsgIdr>
+    <MsgDefIdr>pacs.008.001.08</MsgDefIdr>
+    <CreDt>2026-09-10T14:32:01+08:00</CreDt>
+  </AppHdr>
+  <Document>
+    <FIToFICstmrCdtTrf>
+      <GrpHdr><MsgId>ABC20260910A001</MsgId><CreDtTm>2026-09-10T14:32:01+08:00</CreDtTm><NbOfTxs>1</NbOfTxs><SttlmInf><SttlmMtd>INDA</SttlmMtd></SttlmInf></GrpHdr>
+      <CdtTrfTxInf>
+        <PmtId><InstrId>INST-001</InstrId><EndToEndId>E2E-SEP-CONSULTING-001</EndToEndId><TxId>TX-ABC-001</TxId><UETR>b5f2d3a1-7d20-4c70-9c9b-8f8ef8f10001</UETR></PmtId>
+        <IntrBkSttlmAmt Ccy="USD">80000.00</IntrBkSttlmAmt><IntrBkSttlmDt>2026-09-10</IntrBkSttlmDt>
+        <Dbtr><Nm>ABC GLOBAL LTD</Nm><PstlAdr><Ctry>GB</Ctry></PstlAdr></Dbtr><DbtrAcct><Id><IBAN>GB12ABCD202609100001</IBAN></Id></DbtrAcct><DbtrAgt><FinInstnId><BICFI>HBUKGB4BXXX</BICFI></FinInstnId></DbtrAgt>
+        <CdtrAgt><FinInstnId><BICFI>ICBKCNBJWUH</BICFI></FinInstnId></CdtrAgt><Cdtr><Nm>武汉励功数字服务有限公司</Nm></Cdtr><CdtrAcct><Id><Othr><Id>6222-5678</Id></Othr></Id></CdtrAcct>
+        <RmtInf><Ustrd>CONSULTING SERVICE SEP 2026</Ustrd></RmtInf>
+      </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+  </Document>
+</Message>

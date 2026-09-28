@@ -1,0 +1,11 @@
+{
+  "message_type": "MT103",
+  "synthetic": true,
+  "demo_label": "SIMULATED FOR DEMO",
+  "transaction_reference": "DEMO2011TX0522",
+  "currency": "USD",
+  "amount": 32800,
+  "ordering_customer": "TANJIN-DAIEI CO., LTD.",
+  "beneficiary": "SUZHOU IMPORT & EXPORT TRADE CORPORATION",
+  "remittance_information": "INV TX0522 / CONTRACT TXT264 / BLACK TEA"
+}

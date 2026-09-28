@@ -1,0 +1,162 @@
+{
+  "case_id": "CASE_2015_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2015"
+  },
+  "parties": {
+    "exporter": "SHENZHEN ESHOW CO., LTD.",
+    "importer": "MARCO FOERSTER GMBH",
+    "remitter": "MARCO FOERSTER GMBH",
+    "beneficiary": "SHENZHEN ESHOW CO., LTD."
+  },
+  "transaction": {
+    "currency": "USD",
+    "amount": 153000,
+    "invoice_amount": 153000,
+    "contract_no": "E14052115",
+    "invoice_no": "E140519872",
+    "lc_no": "LC147900931",
+    "goods": "RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE",
+    "quantity": "10000 PCS",
+    "trade_term": "CFR HAMBURG / L/C"
+  },
+  "shipment": {
+    "route": "SHENZHEN → HAMBURG",
+    "shipment_date": "2014-08-30"
+  },
+  "documents": [
+    {
+      "file": "commercial_invoice.png",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2015"
+    },
+    {
+      "file": "packing_list.png",
+      "document_type": "packing_list",
+      "source_type": "international_business_document_exam",
+      "source_year": "2015"
+    },
+    {
+      "file": "shipping_note.png",
+      "document_type": "shipping_note",
+      "source_type": "international_business_document_exam",
+      "source_year": "2015"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "SHENZHEN ESHOW CO., LTD.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "MARCO FOERSTER GMBH",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "E140519872",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "E14052115",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "LC147900931",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 153000,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "10000 PCS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "commercial_invoice.png",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "SHENZHEN → HAMBURG",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "shipping_note.png",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "PARTIAL"
+}

@@ -1,0 +1,25 @@
+{
+  "expected_document_types": [
+    "business_prompt",
+    "commercial_invoice",
+    "packing_list"
+  ],
+  "expected_fields": {
+    "exporter": "SHANGHAI GUANGDA CO., LTD.",
+    "importer": "JOYFAIR TRADING CORP.",
+    "invoice_no": "AE9633-9",
+    "contract_no": "AE9633",
+    "lc_no": "SKY3699",
+    "currency": "GBP",
+    "amount": 96000,
+    "goods": "RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE",
+    "quantity": "10000 PCS",
+    "shipment": "SHANGHAI → LONDON"
+  },
+  "expected_conflicts": [],
+  "expected_missing_evidence": [
+    "bill_of_lading"
+  ],
+  "expected_ese_status": "PARTIAL",
+  "expected_human_review": true
+}

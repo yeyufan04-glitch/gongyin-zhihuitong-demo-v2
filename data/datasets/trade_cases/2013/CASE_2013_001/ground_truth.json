@@ -1,0 +1,25 @@
+{
+  "expected_document_types": [
+    "commercial_invoice",
+    "bill_of_exchange",
+    "packing_list"
+  ],
+  "expected_fields": {
+    "exporter": "TIANJIN TECHSUN CO., LTD.",
+    "importer": "VESTE BEYAS ESYE SAN. TICAS ORGANIZE SANAYI BOLGEST",
+    "invoice_no": "TECH126",
+    "contract_no": "TECH1305",
+    "lc_no": "901LC2519031",
+    "currency": "USD",
+    "amount": 240000,
+    "goods": "CONDENSER",
+    "quantity": "20000PCS",
+    "shipment": "TIANJIN → IZMIR"
+  },
+  "expected_conflicts": [],
+  "expected_missing_evidence": [
+    "transport_document"
+  ],
+  "expected_ese_status": "PARTIAL",
+  "expected_human_review": true
+}

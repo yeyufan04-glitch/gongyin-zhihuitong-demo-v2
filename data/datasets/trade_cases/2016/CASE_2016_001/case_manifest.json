@@ -1,0 +1,168 @@
+{
+  "case_id": "CASE_2016_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2016"
+  },
+  "parties": {
+    "exporter": "SUNSHINE TRADING CORP.",
+    "importer": "JOYFAIR TRADING CORP.",
+    "remitter": "JOYFAIR TRADING CORP.",
+    "beneficiary": "SUNSHINE TRADING CORP."
+  },
+  "transaction": {
+    "currency": "USD",
+    "amount": 79960,
+    "invoice_amount": 79960,
+    "contract_no": "STE0518",
+    "invoice_no": "EXP2015001",
+    "lc_no": "DBS963/FR",
+    "goods": "100% COTTON SHIRT",
+    "quantity": "4000PCS",
+    "trade_term": "CIF NEW YORK / L/C AT SIGHT"
+  },
+  "shipment": {
+    "route": "TIANJIN → NEW YORK",
+    "shipment_date": "2015-09-20"
+  },
+  "documents": [
+    {
+      "file": "2016业务试题.jpg",
+      "document_type": "business_prompt",
+      "source_type": "international_business_document_exam",
+      "source_year": "2016"
+    },
+    {
+      "file": "2016受益人证明.jpg",
+      "document_type": "supporting_document",
+      "source_type": "international_business_document_exam",
+      "source_year": "2016"
+    },
+    {
+      "file": "2016商业发票jpg.jpg",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2016"
+    },
+    {
+      "file": "2016汇票.jpg",
+      "document_type": "bill_of_exchange",
+      "source_type": "international_business_document_exam",
+      "source_year": "2016"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "SUNSHINE TRADING CORP.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "JOYFAIR TRADING CORP.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "EXP2015001",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "STE0518",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "DBS963/FR",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 79960,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "100% COTTON SHIRT",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "4000PCS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "TIANJIN → NEW YORK",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2016商业发票jpg.jpg",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "PARTIAL"
+}

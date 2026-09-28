@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "engine": "Dynamic Document Requirement Engine",
+  "profiles": [
+    { "id": "PROFILE_A", "name": "稳定客户·常规服务贸易", "conditions": { "customerType": "稳定客户", "purpose": "服务贸易", "historicalContractValid": true }, "requiredDocuments": ["本次Invoice"], "reusableDocuments": ["2026年度咨询服务协议"] },
+    { "id": "PROFILE_B", "name": "新客户·新业务", "conditions": { "customerType": "新客户", "purpose": "服务贸易", "historicalContractValid": false }, "requiredDocuments": ["合同", "本次Invoice", "业务说明"], "reusableDocuments": [] },
+    { "id": "PROFILE_C", "name": "资金性质待确认", "conditions": { "customerType": "任意", "purpose": "无法判断", "historicalContractValid": false }, "requiredDocuments": ["业务说明", "合同或其他支持材料"], "reusableDocuments": [] }
+  ]
+}

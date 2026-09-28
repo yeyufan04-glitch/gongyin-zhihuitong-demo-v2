@@ -1,0 +1,10 @@
+{
+  "synthetic": true,
+  "provider": "演示语义任务适配层",
+  "modelGovernance": "NOT_ALLOWED_BUSINESS_DECISION",
+  "claims": [
+    { "id": "CLM-001", "type": "SEMANTIC", "claim": "ABC GLOBAL LTD 与 ABC GLOBAL LIMITED 的主体名称高度匹配，仍需人工确认", "status": "SUPPORTED", "confidence": 0.96, "evidenceIds": ["entity_payment", "entity_contract"], "modelVersion": "演示语义任务 1.0" },
+    { "id": "CLM-002", "type": "SEMANTIC", "claim": "CONSULTING SERVICE SEP 2026 与年度管理咨询合同的服务目的相关", "status": "SUPPORTED", "confidence": 0.91, "evidenceIds": ["payment_purpose", "contract_service"], "modelVersion": "演示语义任务 1.0" },
+    { "id": "CLM-003", "type": "BOUNDARY", "claim": "语义任务不输出风险结论、不替代银行风险系统和人工审批", "status": "GOVERNED", "confidence": 1, "evidenceIds": ["risk_system_result", "trusted_gate"], "modelVersion": "可信边界 1.0" }
+  ]
+}

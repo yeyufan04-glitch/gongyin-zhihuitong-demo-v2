@@ -1,0 +1,180 @@
+{
+  "case_id": "CASE_2017_001",
+  "scenario": "cross_border_trade_remittance",
+  "source": {
+    "type": "international_business_document_exam",
+    "year": "2017"
+  },
+  "parties": {
+    "exporter": "SHANGHAI GUANGDA CO., LTD.",
+    "importer": "JOYFAIR TRADING CORP.",
+    "remitter": "JOYFAIR TRADING CORP.",
+    "beneficiary": "SHANGHAI GUANGDA CO., LTD."
+  },
+  "transaction": {
+    "currency": "GBP",
+    "amount": 96000,
+    "invoice_amount": 96000,
+    "contract_no": "AE9633",
+    "invoice_no": "AE9633-9",
+    "lc_no": "SKY3699",
+    "goods": "RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE",
+    "quantity": "10000 PCS",
+    "trade_term": "CFR LONDON / L/C"
+  },
+  "shipment": {
+    "route": "SHANGHAI → LONDON",
+    "shipment_date": "2016-09-27"
+  },
+  "documents": [
+    {
+      "file": "2017业务试题.jpg",
+      "document_type": "business_prompt",
+      "source_type": "international_business_document_exam",
+      "source_year": "2017"
+    },
+    {
+      "file": "2017业务试题2jpg.jpg",
+      "document_type": "business_prompt",
+      "source_type": "international_business_document_exam",
+      "source_year": "2017"
+    },
+    {
+      "file": "2017发票.jpg",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2017"
+    },
+    {
+      "file": "2017发票2.jpg",
+      "document_type": "commercial_invoice",
+      "source_type": "international_business_document_exam",
+      "source_year": "2017"
+    },
+    {
+      "file": "2017装箱单.jpg",
+      "document_type": "packing_list",
+      "source_type": "international_business_document_exam",
+      "source_year": "2017"
+    },
+    {
+      "file": "2017装箱单2.jpg",
+      "document_type": "packing_list",
+      "source_type": "international_business_document_exam",
+      "source_year": "2017"
+    }
+  ],
+  "evidence_fields": [
+    {
+      "field": "exporter",
+      "value": "SHANGHAI GUANGDA CO., LTD.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "exporter"
+        }
+      ]
+    },
+    {
+      "field": "importer",
+      "value": "JOYFAIR TRADING CORP.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "importer"
+        }
+      ]
+    },
+    {
+      "field": "invoice_no",
+      "value": "AE9633-9",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "invoice_no"
+        }
+      ]
+    },
+    {
+      "field": "contract_no",
+      "value": "AE9633",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "contract_no"
+        }
+      ]
+    },
+    {
+      "field": "lc_no",
+      "value": "SKY3699",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "lc_no"
+        }
+      ]
+    },
+    {
+      "field": "currency",
+      "value": "GBP",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "currency"
+        }
+      ]
+    },
+    {
+      "field": "amount",
+      "value": 96000,
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "amount"
+        }
+      ]
+    },
+    {
+      "field": "goods",
+      "value": "RETEVIS BRAND RT628 PORTABLE WALKIE TALKIE",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "goods"
+        }
+      ]
+    },
+    {
+      "field": "quantity",
+      "value": "10000 PCS",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "quantity"
+        }
+      ]
+    },
+    {
+      "field": "shipment",
+      "value": "SHANGHAI → LONDON",
+      "confidence": "high",
+      "evidence": [
+        {
+          "document": "2017发票.jpg",
+          "field": "shipment"
+        }
+      ]
+    }
+  ],
+  "system_route": "PARTIAL"
+}

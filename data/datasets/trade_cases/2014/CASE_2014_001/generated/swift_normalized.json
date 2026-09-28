@@ -1,0 +1,11 @@
+{
+  "message_type": "MT103",
+  "synthetic": true,
+  "demo_label": "SIMULATED FOR DEMO",
+  "transaction_reference": "DEMO2014AD2013011",
+  "currency": "USD",
+  "amount": 27500,
+  "ordering_customer": "HAZZE AB HOLDING",
+  "beneficiary": "SHANGHAI ANDYS TRADING CO., LTD.",
+  "remittance_information": "INV AD2013011 / CONTRACT AD13007 / GAS DETECTORS"
+}

@@ -1,0 +1,11 @@
+{
+  "message_type": "MT103",
+  "synthetic": true,
+  "demo_label": "SIMULATED FOR DEMO",
+  "transaction_reference": "DEMO2012X118",
+  "currency": "USD",
+  "amount": 192000,
+  "ordering_customer": "FAR EASTERN TRADING COMPANY LIMITED",
+  "beneficiary": "DAYU CUTTING TOOLS I/E CORP",
+  "remittance_information": "INV X118 / CONTRACT MK007 / CUTTING TOOLS"
+}

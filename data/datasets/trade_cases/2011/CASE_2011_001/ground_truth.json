@@ -1,0 +1,22 @@
+{
+  "expected_document_types": [
+    "commercial_invoice",
+    "packing_list"
+  ],
+  "expected_fields": {
+    "exporter": "SUZHOU IMPORT & EXPORT TRADE CORPORATION",
+    "importer": "TANJIN-DAIEI CO., LTD.",
+    "invoice_no": "TX0522",
+    "contract_no": "TXT264",
+    "lc_no": "XT173",
+    "currency": "USD",
+    "amount": 32800,
+    "goods": "BLACK TEA",
+    "quantity": "330KGS",
+    "shipment": "SUZHOU PORT → OSAKA PORT"
+  },
+  "expected_conflicts": [],
+  "expected_missing_evidence": [],
+  "expected_ese_status": "COMPLETE",
+  "expected_human_review": true
+}

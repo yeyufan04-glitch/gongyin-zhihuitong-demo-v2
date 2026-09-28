@@ -1,0 +1,25 @@
+{
+  "expected_document_types": [
+    "business_prompt",
+    "commercial_invoice",
+    "bill_of_exchange"
+  ],
+  "expected_fields": {
+    "exporter": "SHANGHAI CHENGYUAN TRADING CO., LTD.",
+    "importer": "MATHILDE EUROPE GMBH",
+    "invoice_no": "DS1800681",
+    "contract_no": "DS1808022",
+    "lc_no": "LLC189110987",
+    "currency": "USD",
+    "amount": 75780,
+    "goods": "CULT LARGE SHOPPING FELT",
+    "quantity": "3000 PCS",
+    "shipment": "SHANGHAI → FRANKFURT"
+  },
+  "expected_conflicts": [],
+  "expected_missing_evidence": [
+    "packing_list"
+  ],
+  "expected_ese_status": "PARTIAL",
+  "expected_human_review": true
+}

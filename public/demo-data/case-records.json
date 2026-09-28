@@ -1,0 +1,8 @@
+{
+  "dataset": "Synthetic Demo Case Records",
+  "cases": [
+    {"id":"TT-IN-20260910-001","route":"FOCUSED_REVIEW","customer":"武汉励功数字服务有限公司","amount":"USD 80,000","purpose":"服务贸易","riskStatus":"CLEAR","reviewScope":"付款方主体名称 1 项"},
+    {"id":"TT-IN-20260910-002","route":"FAST_REVIEW","customer":"武汉励功数字服务有限公司","amount":"USD 30,000","purpose":"服务贸易","riskStatus":"CLEAR","reviewScope":"查看摘要"},
+    {"id":"TT-IN-20260910-003","route":"SUPPLEMENT_REQUIRED","customer":"武汉远洋设备有限公司","amount":"USD 120,000","purpose":"货物贸易","riskStatus":"CLEAR","reviewScope":"补充Invoice金额差异说明"}
+  ]
+}
