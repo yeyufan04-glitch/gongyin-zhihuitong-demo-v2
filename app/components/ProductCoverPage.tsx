@@ -1,6 +1,6 @@
 "use client";
 
-type ProductCoverPageProps = { onEnter: () => void };
+type ProductCoverPageProps = { onEnter: (role?: "customer" | "runtime") => void };
 
 const architecture = [
   { no: "01", kind: "一底座", title: "统一业务事实底座", meta: "多源解析 · 事实融合 · 证据绑定", className: "launch-node-fact" },
@@ -53,7 +53,7 @@ export function ProductCoverPage({ onEnter }: ProductCoverPageProps) {
     <header className="launch-header">
       <div className="launch-brand">
         <span className="launch-brand-mark">工</span>
-        <div><strong>工商银行</strong><i /> <span>金融科技创新</span></div>
+        <div><strong>武汉理工大学</strong></div>
       </div>
       <div className="launch-competition"><span>2026届“工行杯”</span><b>全国大学生金融科技创新大赛</b></div>
     </header>
@@ -72,9 +72,13 @@ export function ProductCoverPage({ onEnter }: ProductCoverPageProps) {
         <small>核心技术架构</small>
         <strong>两域</strong><i>·</i><strong>一底座</strong><i>·</i><strong>一闸门</strong><i>·</i><strong>一闭环</strong>
       </div>
+      <div className="launch-capabilities" aria-label="四项核心能力">
+        <span>智能识别</span><span>事实核验</span><span>可信执行</span><span>全程留痕</span>
+      </div>
 
       <div className="launch-actions">
         <button className="launch-enter" onClick={onEnter}><span>进入系统</span><b>→</b></button>
+        <button className="launch-runtime" onClick={() => onEnter("runtime")}><span>查看系统运行</span><b>↗</b></button>
         <p><i /> 竞赛演示环境<br /><span>模拟数据 · 全程留痕</span></p>
       </div>
     </section>

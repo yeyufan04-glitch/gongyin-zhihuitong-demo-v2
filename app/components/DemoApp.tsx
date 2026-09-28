@@ -10,6 +10,7 @@ import { resolveDocumentProfile } from "../../core/rules/documentRules.mjs";
 import { SystemRuntime21 } from "./SystemRuntime21";
 import { CustomerMaterials21 } from "./CustomerMaterials21";
 import { BankCaseReviewLayout } from "./bank-case/BankCaseReviewLayout";
+import { analyzeCase, getCaseSummary, resetDemo as resetLiveDemo } from "../../src/api/demoApi.js";
 
 type Role = "customer" | "operator" | "reviewer" | "runtime";
 type CustomerView = "home" | "inbound" | "materials" | "report";
@@ -29,9 +30,10 @@ const customerNav: Array<{ id: CustomerView; label: string }> = [
 const bankNav: Array<{ id: BankView; label: string }> = [{ id: "workbench", label: "汇入工作台" }, { id: "review", label: "Case审核" }];
 const routeText: Record<string, string> = { FAST_REVIEW: "快速复核", FOCUSED_REVIEW: "重点复核", SUPPLEMENT_REQUIRED: "待客户补件", FULL_REVIEW: "完整审核", RISK_HANDOFF_REQUIRED: "风险流程接管" };
 const xmlFileByCase = ["case_2011_pacs008.xml", "case_2012_pacs008.xml", "case_2019_pacs008.xml"];
+const staticRiskNotice = "风险系统未返回风险预警";
 
-export function DemoApp() {
-  const [role, setRole] = useState<Role>("customer");
+export function DemoApp({ initialRole = "customer" }: { initialRole?: Role }) {
+  const [role, setRole] = useState<Role>(initialRole);
   const [customerView, setCustomerView] = useState<CustomerView>("home");
   const [bankView, setBankView] = useState<BankView>("workbench");
   const [activeCaseIndex, setActiveCaseIndex] = useState(0);
@@ -50,6 +52,10 @@ export function DemoApp() {
   const [replaying, setReplaying] = useState(false);
   const [runtimeNode, setRuntimeNode] = useState(runtimeNodes[14]);
   const [autoDrive, setAutoDrive] = useState(false);
+  const [demoCaseId, setDemoCaseId] = useState<string | null>(null);
+  const [liveLoading, setLiveLoading] = useState(false);
+  const liveMode = Boolean(import.meta.env.VITE_DEMO_API_BASE_URL);
+  void staticRiskNotice;
 
   const activeCase = demoCases[activeCaseIndex];
   const activePayment = demoPayments[activeCaseIndex];
@@ -73,10 +79,10 @@ export function DemoApp() {
   }, [activeCaseIndex, activeCase.evidencePrefix]);
 
   const switchRole = (next: Role) => { setRole(next); setNotice(""); if (next === "operator" || next === "reviewer") setBankView("workbench"); if (next === "runtime") setRuntimeActive(runtimeNodes.length); };
-  const resetDemo = () => { setConfirmed(false); setPurpose("服务贸易"); setHistoryUsed(false); setUploaded(false); setAiDone(false); setOperatorDone(false); setReviewerDone(false); setPosted(false); setNotice("演示数据已恢复到主Case起点"); setRole("customer"); setCustomerView("home"); setBankView("workbench"); setRuntimeActive(runtimeNodes.length); };
+  const resetDemo = async () => { window.dispatchEvent(new Event("demo-live-reset")); if (liveMode && demoCaseId) { try { await resetLiveDemo(demoCaseId); setDemoCaseId(null); } catch { setNotice("演示服务暂不可用，未能重置本地业务"); return; } } setConfirmed(false); setPurpose("服务贸易"); setHistoryUsed(false); setUploaded(false); setAiDone(false); setOperatorDone(false); setReviewerDone(false); setPosted(false); setNotice("演示数据已恢复到主Case起点"); setRole("customer"); setCustomerView("home"); setBankView("workbench"); setRuntimeActive(runtimeNodes.length); };
   const startReplay = () => { setRole("runtime"); setRuntimeActive(0); setReplaying(true); setNotice("正在按Audit Ledger时间顺序回放主Case"); };
   const selectEvidence = (id: string) => { const evidence = evidenceReferences.find((item) => item.id === id); if (evidence) setSelectedEvidence(evidence); };
-  const runPrecheck = () => { setNotice("后台正在完成：报文解析 → 事实抽取 → 风险系统协查 → 可信决策闸门"); window.setTimeout(() => { setAiDone(true); setNotice("预审完成：银行风险系统未返回风险预警，保留1项主体名称人工确认"); }, 1000); };
+  const runPrecheck = async () => { if (!liveMode) { setNotice("竞赛在线演示：当前使用预置演示数据；本地真实模式可执行动态OCR与可信决策链。"); return; } if (!demoCaseId) { setNotice("请先接收商业发票"); return; } setLiveLoading(true); setNotice("正在读取商业发票 → OCR识别 → 构建结构化业务事实 → 一致性核验"); try { await analyzeCase(demoCaseId); await getCaseSummary(demoCaseId); setAiDone(true); setNotice("智能分析完成，结果已由本地 Demo Backend 返回"); } catch (error) { setNotice(error instanceof Error ? error.message : "智能分析服务暂不可用"); } finally { setLiveLoading(false); } };
 
   return <div className="app-shell v2-shell">
     <aside className="side-rail v2-rail">

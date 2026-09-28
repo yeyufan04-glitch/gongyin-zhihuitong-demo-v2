@@ -10,7 +10,7 @@ const migrations = [
   { key: "融合", cav: ["多传感器融合", "环境模型"], bank: ["业务事实融合", "实体标准化", "证据关联"], note: "把不同来源整理成统一业务事实。" },
   { key: "智能作业", cav: ["自动驾驶决策算法"], bank: ["确定性规则", "AI语义模型"], note: "能确定的用规则，模糊问题交给模型。" },
   { key: "安全计算", cav: ["V2X身份验证", "车载安全计算单元"], bank: ["可信证据网关", "工银隐私舱"], note: "数据先验证，再进入受控处理环境。" },
-  { key: "可信决策闸门", cav: ["Safety Controller"], bank: ["可信决策闸门"], note: "AI建议不能直接触发真实业务动作。", primary: true },
+  { key: "可信执行决策（CAV）", cav: ["安全控制器（Safety Controller）"], bank: ["可信决策闸门"], note: "该决策仅控制当前业务动作，不代表整笔交易被自动批准或自动拒绝。", primary: true },
   { key: "人工与日志", cav: ["驾驶员接管", "事件记录仪"], bank: ["银行重点复核", "可信审核日志"], note: "不确定时交给人，全过程留下记录。" },
 ];
 
@@ -43,7 +43,7 @@ export function SystemRuntime21({ cases, activePayment, posted, selectEvidence }
     return posted ? "经办、复核、Mock入账和审计封存已完成。" : "等待银行经办确认付款方主体关系，并将全过程写入可信审核日志。";
   };
 
-  return <section className="runtime-cockpit">
+  return <section className="runtime-cockpit"><div className="runtime-final-title"><span>工银智汇通 · 可信作业运行监控</span><p>展示一笔国际汇款从材料进入到可信业务执行的完整技术过程。</p><div className="runtime-six-stage"><b>01 汇款与材料接入</b><i>→</i><b>02 智能单据识别</b><i>→</i><b>03 结构化事实构建</b><i>→</i><b>04 一致性核验</b><i>→</i><b>05 可信执行决策</b><i>→</i><b>06 业务状态流转</b></div><small>全流程审计留痕</small></div>
     <header className="runtime-cockpit-head"><div><span className="eyebrow red-eyebrow">CAV可信AI运行驾驶舱</span><h2>系统运行</h2><p>AI处理一笔汇款的过程，就像智能汽车在可信安全系统保护下抵达目的地。</p></div><div className="runtime-case-chip"><span>{activeCase.id}</span><b>{activeCase.customerName}</b><strong>{activeCase.currency} {activeCase.amount.toLocaleString()}.00 · {activeCase.purpose}</strong></div><div className="runtime-head-status"><span>当前阶段<b>可信决策</b></span><span>业务路由<b>{activeCase.route === "SUPPLEMENT_REQUIRED" ? "待客户补件" : "重点复核"}</b></span><span>人工待确认<b>{activeCase.route === "SUPPLEMENT_REQUIRED" ? "金额冲突" : "1项"}</b></span><div><button className="outline" onClick={replay}>过程回放</button><button className="outline" onClick={() => setPaused(!paused)}>{paused ? "继续" : "暂停"}</button><button className="primary" onClick={reset}>重置本Case</button></div></div></header>
 
     <section className="migration-panel"><div className="runtime-section-title"><div><span className="eyebrow red-eyebrow">技术迁移层</span><h3>自动驾驶安全架构如何迁移到银行可信AI</h3></div><small>点击任一阶段查看原理、银行对应机制和本Case的实际数据。</small></div><div className="migration-track"><div className="track-label cav-label">自动驾驶安全架构 <span>小车仅作为技术思想来源</span></div><div className="track-label bank-label">工银智汇通可信AI作业架构</div>{migrations.map((item, index) => <button key={item.key} className={`migration-stage ${item.primary ? "primary" : ""}`} onClick={(event) => { event.stopPropagation(); setDrawer(item.key); }}><em>{String(index + 1).padStart(2, "0")}</em><div className="migration-cav"><span>自动驾驶</span><b>{item.cav.map((value) => <i key={value}>{value}</i>)}</b></div><div className="migration-arrow">↓</div><div className="migration-bank"><span>银行对应</span><b>{item.bank.map((value) => <i key={value}>{value}</i>)}</b></div><p>{item.note}</p></button>)}</div></section>

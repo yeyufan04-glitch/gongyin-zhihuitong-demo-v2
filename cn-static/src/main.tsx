@@ -7,7 +7,8 @@ import { useState } from "react";
 
 function StaticRoot() {
   const [entered, setEntered] = useState(false);
-  return entered ? <DemoApp /> : <ProductCoverPage onEnter={() => setEntered(true)} />;
+  const [initialRole, setInitialRole] = useState<"customer" | "runtime">("customer");
+  return entered ? <DemoApp initialRole={initialRole} /> : <ProductCoverPage onEnter={(role = "customer") => { setInitialRole(role); setEntered(true); }} />;
 }
 
 createRoot(document.getElementById("root")!).render(<React.StrictMode><StaticRoot /></React.StrictMode>);
